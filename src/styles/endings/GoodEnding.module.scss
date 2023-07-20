@@ -1,0 +1,38 @@
+@use '@/styles/dirs/mixins';
+
+.good_ending {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    z-index: 999;
+
+    &_wallpaper {
+        @include mixins.wallpaper(0.4);
+
+        img{
+            position: absolute;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    &_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        padding: 2em;
+    }
+
+    &_text {
+        p {
+            text-align: center;
+            font-size: calc(1em + 0.6vw);
+        }
+    }
+}

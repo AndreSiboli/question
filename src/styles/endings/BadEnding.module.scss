@@ -1,0 +1,85 @@
+@use '@/styles/dirs/mixins';
+
+.bad_ending {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    z-index: 999;
+
+    &_wallpaper {
+        @include mixins.wallpaper(0.3);
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        padding: 2em;
+
+        h1 {
+            &.glitch {
+                animation: glitch 0.35s linear infinite;
+            }
+
+            @keyframes glitch {
+                0% {
+                    transform: translate(0);
+                }
+                8.33%,
+                25% {
+                    transform: translate(-0.1em, 0.02em);
+                    text-shadow: 0.1em 0 0 crimson, -0.08em 0 0 lightblue, -0.1em 0 0 #e9e932,
+                        -0.5em 0 0 #fd35fd;
+                }
+
+                33.33%,
+                50% {
+                    transform: translate(0px, 0px);
+                }
+
+                58.33%,
+                75% {
+                    transform: translate(0.05em, -0.1em);
+                    text-shadow: -0.05em 0 0 crimson, -0.1em 0 0 lightblue, 0.5em 0 0 #e9e932,
+                        -0.2em 0 0 #fd35fd;
+                }
+
+                83.33% {
+                    transform: translateX(-0.1em, 0.02em);
+                    text-shadow: 0.3em 0 0 crimson, 0.08em 0 0 lightblue, -0.2em 0 0 #e9e932,
+                        -0.07em 0 0 #fd35fd;
+                }
+            }
+        }
+
+        svg {
+            font-size: calc(2em + 1.6vw);
+            color: darkred;
+            animation: spin 1.5s linear infinite;
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@use '@/styles/dirs/variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+}
+
+body {
+    background-color: variables.$secondary-color;
+    font-family: 'Agdasima', sans-serif; //'Agdasima'
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    font-size: calc(1.2em + .5vw);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-roboto-condensed), sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: calc(1.5em + 1.8vw);
+}
