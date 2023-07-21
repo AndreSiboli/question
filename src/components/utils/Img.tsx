@@ -19,7 +19,6 @@ export default function Img(props: PropTypes) {
             // width={0}
             // height={0}
             fill
-            objectFit={objectFit}
             sizes="100vw"
             style={{ ...style, objectFit: objectFit }}
             priority={priority}
