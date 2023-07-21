@@ -5,7 +5,7 @@ import Container from '@/components/utils/Container';
 import Img from '@/components/utils/Img';
 import LinkButton from '@/components/buttons/LinkButton';
 
-import wallpaper from '@/assets/avif/home/papers.avif';
+import wallpaper from '@/assets/avif/home/main.avif';
 import descImage from '@/assets/avif/home/heart.avif';
 import doubtImage from '@/assets/avif/home/doubt.avif';
 import prosImage from '@/assets/avif/graph/pros.avif';
