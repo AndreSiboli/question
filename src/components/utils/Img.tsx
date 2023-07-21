@@ -15,9 +15,11 @@ export default function Img(props: PropTypes) {
         <Image
             src={src}
             alt={alt}
-            width={0}
-            height={0}
-            sizes="(max-width: 768px) 50vw, 100vw"
+            // width={0}
+            // height={0}
+            fill
+            objectFit='cover'
+            sizes="100vw"
             style={style}
             priority={priority}
         />

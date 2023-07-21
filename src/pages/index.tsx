@@ -26,7 +26,10 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} `}>
+            <main
+                className={`${styles.main} `}
+                style={{ position: 'relative', width: '100%', height: '540px' }}
+            >
                 <div className={styles.main_wallpaper}>
                     <Img src={wallpaper.src} alt="" style={styleImage} />
                 </div>
@@ -57,7 +60,10 @@ export default function Home() {
                                 porém antes de responde-la, eu quero mostrar algumas coisas.
                             </p>
                         </div>
-                        <div className={styles.description_image}>
+                        <div
+                            className={styles.description_image}
+                            style={{ position: 'relative', width: '100%', height: '540px' }}
+                        >
                             <Img
                                 src={descImage.src}
                                 alt="Uma image de um coração neon"
@@ -125,7 +131,10 @@ export default function Home() {
                                     gráfico 100% confiável, claro.
                                 </p>
                             </div>
-                            <div className={styles.graph_proposal}>
+                            <div
+                                className={styles.graph_proposal}
+                                style={{ position: 'relative', width: '100%', height: '540px' }}
+                            >
                                 <Img
                                     src={happyImage.src}
                                     alt="Gráfico sobre felicidade"
@@ -146,7 +155,10 @@ export default function Home() {
             </section>
 
             <section className={styles.doubt}>
-                <div className={styles.doubt_wallpaper}>
+                <div
+                    className={styles.doubt_wallpaper}
+                    style={{ position: 'relative', width: '100%', height: '540px' }}
+                >
                     <Img src={doubtImage.src} alt="" style={styleImage} />
                 </div>
                 <Container>
