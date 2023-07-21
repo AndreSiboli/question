@@ -102,9 +102,9 @@ export default function Carousel() {
             <div className={styles.carousel_items} ref={carousel}>
                 {images.map((img, index) => (
                     <div className={styles.image} key={img + index} ref={image}>
-                        <div className={styles.carousel_wallpaper}>
+                        {/* <div className={styles.carousel_wallpaper}>
                             <Img src={img} alt="" style={styleImage} />
-                        </div>
+                        </div> */}
                         <div className={styles.item}>
                             <h3>Aqui ficará as memorias</h3>
                             <p>Aqui ficará todas as memórias com a pessoa.</p>
