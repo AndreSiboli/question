@@ -70,19 +70,24 @@
         @include mixins.flex-center();
         flex: 1 1 50%;
 
-        img {
-            max-width: 300px;
-            height: 400px;
-            object-fit: cover;
+        .image {
+            max-width: 250px;
+            width: 100%;
+            max-height: 400px;
+            aspect-ratio: 9/14;
             transform: rotate(5deg);
+            position: relative;
         }
     }
 
     @media screen and (max-width: 768px) {
+        & {
+            padding: 4em 2em;
+        }
         &_container {
             flex-direction: column;
             justify-content: space-evenly;
-            gap: 2em;
+            gap: 4em;
         }
 
         &_text {
@@ -164,9 +169,6 @@
         width: 100%;
 
         p {
-            text-align: center;
-            font-size: calc(1em + 1vw);
-
             span:first-child {
                 color: #4a766e;
             }
@@ -181,10 +183,11 @@
         justify-content: space-evenly;
         width: 100%;
 
-        img {
+        .image {
+            position: relative;
             max-width: 800px;
             width: 100%;
-            object-fit: cover;
+            aspect-ratio: 16/12;
         }
     }
 
@@ -227,12 +230,14 @@
     }
 
     &_proposal {
-        position: relative;
-        max-width: 800px;
+        display: flex;
+        justify-content: center;
         width: 100%;
-
-        img {
-            object-fit: cover;
+        .image {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            aspect-ratio: 16/9;
         }
     }
 

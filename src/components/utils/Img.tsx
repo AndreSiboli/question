@@ -4,12 +4,13 @@ import styles from '@/styles/pages/Image.module.scss';
 interface PropTypes {
     src: string;
     alt: string;
+    objectFit?: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down';
     style: {};
     priority?: boolean;
 }
 
 export default function Img(props: PropTypes) {
-    const { src, alt, style, priority = true } = props;
+    const { src, alt, style, priority = true, objectFit = 'cover' } = props;
 
     return (
         <Image
@@ -18,9 +19,9 @@ export default function Img(props: PropTypes) {
             // width={0}
             // height={0}
             fill
-            objectFit='cover'
+            objectFit={objectFit}
             sizes="100vw"
-            style={style}
+            style={{ ...style, objectFit: objectFit }}
             priority={priority}
         />
     );

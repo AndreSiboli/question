@@ -26,10 +26,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main
-                className={`${styles.main} `}
-                style={{ position: 'relative', width: '100%', height: '540px' }}
-            >
+            <main className={`${styles.main}`}>
                 <div className={styles.main_wallpaper}>
                     <Img src={wallpaper.src} alt="" style={styleImage} />
                 </div>
@@ -60,15 +57,14 @@ export default function Home() {
                                 porém antes de responde-la, eu quero mostrar algumas coisas.
                             </p>
                         </div>
-                        <div
-                            className={styles.description_image}
-                            style={{ position: 'relative', width: '100%', height: '540px' }}
-                        >
-                            <Img
-                                src={descImage.src}
-                                alt="Uma image de um coração neon"
-                                style={styleImage}
-                            />
+                        <div className={styles.description_image}>
+                            <div className={styles.image}>
+                                <Img
+                                    src={descImage.src}
+                                    alt="Uma image de um coração neon"
+                                    style={styleImage}
+                                />
+                            </div>
                         </div>
                     </div>
                 </Container>
@@ -111,7 +107,14 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className={styles.duality_proposal}>
-                                <Img src={prosImage.src} alt="Prós e contras" style={styleImage} />
+                                <div className={styles.image}>
+                                    <Img
+                                        src={prosImage.src}
+                                        alt="Prós e contras"
+                                        style={styleImage}
+                                        objectFit="contain"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,15 +134,15 @@ export default function Home() {
                                     gráfico 100% confiável, claro.
                                 </p>
                             </div>
-                            <div
-                                className={styles.graph_proposal}
-                                style={{ position: 'relative', width: '100%', height: '540px' }}
-                            >
-                                <Img
-                                    src={happyImage.src}
-                                    alt="Gráfico sobre felicidade"
-                                    style={styleImage}
-                                />
+                            <div className={styles.graph_proposal}>
+                                <div className={styles.image}>
+                                    <Img
+                                        src={happyImage.src}
+                                        alt="Gráfico sobre felicidade"
+                                        style={styleImage}
+                                        objectFit="contain"
+                                    />
+                                </div>
                             </div>
 
                             <div className={styles.graph_text}>
@@ -155,10 +158,7 @@ export default function Home() {
             </section>
 
             <section className={styles.doubt}>
-                <div
-                    className={styles.doubt_wallpaper}
-                    style={{ position: 'relative', width: '100%', height: '540px' }}
-                >
+                <div className={styles.doubt_wallpaper}>
                     <Img src={doubtImage.src} alt="" style={styleImage} />
                 </div>
                 <Container>

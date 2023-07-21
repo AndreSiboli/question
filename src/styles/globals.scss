@@ -23,7 +23,7 @@ a {
 
 p {
     text-align: center;
-    font-size: calc(1.2em + .5vw);
+    font-size: calc(1.2em + 0.6vw);
 }
 
 h1,
@@ -32,7 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-roboto-condensed), sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    // font-family: var(--font-roboto-condensed), sans-serif;
 }
 
 h2 {
