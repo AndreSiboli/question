@@ -92,10 +92,10 @@ export default function Carousel() {
     return (
         <div className={styles.carousel}>
             <div className={styles.carousel_buttons}>
-                <button onClick={() => scroll(-1)}>
+                <button onClick={() => scroll(-1)} aria-label="previous-button">
                     <FaAngleLeft />
                 </button>
-                <button onClick={() => scroll(1)}>
+                <button onClick={() => scroll(1)} aria-label="next-button">
                     <FaAngleRight />
                 </button>
             </div>

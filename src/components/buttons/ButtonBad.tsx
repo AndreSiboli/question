@@ -3,6 +3,7 @@ import { ChangeEvent } from 'react';
 
 interface PropTypes {
     text: string;
+
     customClass: string;
     disabled: boolean;
     onClick?: Function;
