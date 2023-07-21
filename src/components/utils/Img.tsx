@@ -9,7 +9,7 @@ interface PropTypes {
 }
 
 export default function Img(props: PropTypes) {
-    const { src, alt, style, priority = false } = props;
+    const { src, alt, style, priority = true } = props;
 
     return (
         <Image
