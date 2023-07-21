@@ -1,9 +1,9 @@
 import styles from '@/styles/Carousel.module.scss';
 import Image from 'next/image';
 
-import img1 from '@/assets/carousel/01.jpg';
-import img2 from '@/assets/carousel/02.jpg';
-import img3 from '@/assets/carousel/03.jpg';
+import img1 from '@/assets/avif/carousel/01.avif';
+import img2 from '@/assets/avif/carousel/02.avif';
+import img3 from '@/assets/avif/carousel/03.avif';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
